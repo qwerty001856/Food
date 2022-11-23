@@ -11,11 +11,194 @@
 
 
 
+body{
+    background-color:#ffffff;
+}
+#nav{
+    
+    /* background-color: black; */
+    align-items: center;
+    top: 0px;
+    position: fixed;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+#nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#logo{
+   display: inline;
+}
+#logo img{
+    height: 50px;
+    /* width: 50px; */
+    margin: 3px 10px;    
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+#nav ul {
+    
+    margin:0px;
+    padding: 0px;
+}
+#nav ul li{
+    /* color: rgb(44, 78, 66); */
+    margin:10px;
+    padding: 4px;
+    border: 2px solid grey;
+    background-color: rgb(129, 95, 95);
+    border-radius: 10px;
+}
+.navv{
+    text-decoration: none;
+    color: white;
+}
+#nav ul li:hover{
+    background-color: rgb(128, 169, 169);
+    transform: scale(1.5);
+}
+/* .navv:hover{
+    color: black;
+} */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(1st.png) no-repeat center center/cover ;
+    /* background-size: 100%; */
+    height:25rem;
+    /* position: absolute; */
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h2{
+    color: rgba(0, 18, 51,200);
+    text-shadow: 1px 0px rgb(255, 255, 255);
+}
+#home p{
+    text-shadow: 1px 0px black;
+    color: rgb(7, 46, 63);
+    font-size: 1.3rem;
+    text-align: center;
+    margin:7px 14rem;
+}
+#order{
+    background-color: rgb(97, 183, 82);
+    margin: 7px;
+    padding: 5px;
+    color: rgb(110, 20, 130);
+}
+#order:hover{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+hr{
+    border-style: dotted none none;            
+    width: 10%;
+    border-width: 10px;
+    border-color: rgb(233, 204, 204);
+}
+#services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(84, 19, 33);
+}
+.box{
+    background-color: rgb(150, 160, 188);
+    border: 4px solid rgb(117, 96, 96);
+    border-radius: 25px;
+    margin: 0px 18px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 22rem;
+    /* width: 320px; */
+    width: 28%;
+    /* width: 20rem; */
+
+}
+.box img{
+    width: 96%;
+}
+.box p{
+    margin: 0px;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+#services-container img{
+    height: 160px;
+   margin: auto;
+   display: block;
+   
+}
+#client{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: url(client.jpg) no-repeat center center/cover;
+    background-size: 100%;
+    height: 40rem;
+    text-shadow: 1px black;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact div{
+    /* border: 3px solid rgb(178, 152, 152); */
+    padding: 10px 45px;
+    width: 40%;
+    background-color: rgb(158, 202, 202);
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+@media  (max-width:640px) {
+    #services{
+    flex-direction: column;
+    }
+    .box{
+        /* flex-direction: row; */
+        width: 96%;
+    }
+    .box img{
+        height: 95%;
+    }
+    #home p{
+        margin: auto;
+    }
+}
+
+
 </style>
 <body>
     <nav id="nav">
         <div id="logo">
-            <img src="photos/Sukhjot.png" alt="">
+            <img src="Sukhjot.png" alt="">
         </div>
         <ul>
             <li class="nav-item"><a href="#home" class="navv">Home</a></li>
@@ -34,17 +217,17 @@
         <h1>Our services</h1>
         <div id="services">
             <div class="box">
-                <img src="photos/cater.jpg" alt="">
+                <img src="cater.jpg" alt="">
                 <h3>Food Catering</h3>
                 <p>h Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, odit? ur, architecto!</p>
             </div>
             <div class="box">
-                <img src="photos/bulk.jpg" alt="">
+                <img src="bulk.jpg" alt="">
                 <h3>Bulk Order</h3>
                 <p>hi Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, animi? elit. Unde, veritatis.</p>
             </div>
             <div class="box">
-                <img src="photos/order.jpg" alt="">
+                <img src="order.jpg" alt="">
                 <h3>Online Order</h3>
                 <p>hii Lorem ipsum dolor sit amet, consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quisquam? elit. Veritatis, iusto! </p>
             </div>
